@@ -55,7 +55,7 @@ namespace TaxCalculatorInterviewTests
         /// </summary>
         public double GetStandardTaxRate(Commodity commodity)
         {
-            return _rates.ContainsKey(commodity) ? _rates[commodity].First().Value : DEFAULT_RATE;
+            return _rates.ContainsKey(commodity) ? _rates[commodity].Last().Value : DEFAULT_RATE;
         }
 
 
